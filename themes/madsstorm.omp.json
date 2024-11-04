@@ -49,6 +49,18 @@
           "type": "git"
         },
         {
+          "foreground": "#00ff00",
+          "style": "plain",
+          "template": " {{ if .Staging.Changed }}+{{ .Staging.Added }} ~{{ .Staging.Modified }} -{{ .Staging.Deleted }}{{ end }} \u007c",
+          "type": "git"
+        },
+        {
+          "foreground": "#ff0000",
+          "style": "plain",
+          "template": " {{ if .Working.Changed }}+{{ .Working.Added }} ~{{ .Working.Modified }} -{{ .Working.Deleted }}{{ end }}",
+          "type": "git"
+        },
+        {
           "foreground": "#007ACC",
           "style": "plain",
           "template": "\ue0b0 ",
