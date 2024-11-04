@@ -23,13 +23,13 @@
           "type": "session"
         },
         {
-          "foreground": "#0CA0D8",
+          "foreground": "#ffffff",
           "properties": {
             "folder_separator_icon": "/",
             "style": "full"
           },
           "style": "plain",
-          "template": " \uf07b {{ .Path }} ",
+          "template": " {{ .Path }} ",
           "type": "path"
         },
         {
