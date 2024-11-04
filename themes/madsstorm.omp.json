@@ -39,6 +39,7 @@
             "cherry_pick_icon": "\u2713 ",
             "commit_icon": "\u25b7 ",
             "fetch_status": true,
+            "fetch_upstream_icon": true,
             "merge_icon": "\u25f4 ",
             "no_commits_icon": "[no commits]",
             "rebase_icon": "\u2c62 ",
@@ -46,18 +47,6 @@
           },
           "style": "plain",
           "template": "{{ .HEAD }}{{ if and (eq .Ahead 0) (eq .Behind 0) }} \u2261{{end}}{{ if gt .Ahead 0 }} \u2191{{.Ahead}}{{end}}{{ if gt .Behind 0 }} \u2193{{.Behind}}{{end}} {{ if .Staging.Changed }}+{{ .Staging.Added }} ~{{ .Staging.Modified }} -{{ .Staging.Deleted }}{{ end }} \u007c {{ if .Working.Changed }}+{{ .Working.Added }} ~{{ .Working.Modified }} -{{ .Working.Deleted }}{{ end }}",
-          "type": "git"
-        },
-        {
-          "foreground": "#00ff00",
-          "style": "plain",
-          "template": "{{ if .Staging.Changed }} +{{ .Staging.Added }} ~{{ .Staging.Modified }} -{{ .Staging.Deleted }}{{ end }} \u007c",
-          "type": "git"
-        },
-        {
-          "foreground": "#ff0000",
-          "style": "plain",
-          "template": "{{ if .Working.Changed }} +{{ .Working.Added }} ~{{ .Working.Modified }} -{{ .Working.Deleted }}{{ end }}",
           "type": "git"
         },
         {
