@@ -45,7 +45,7 @@
             "tag_icon": "\u25b6 "
           },
           "style": "plain",
-          "template": "[{{ .HEAD }}{{ if and (eq .Ahead 0) (eq .Behind 0) }} \u2261{{end}}{{ if gt .Ahead 0 }} \u2191{{.Ahead}}{{end}}{{ if gt .Behind 0 }} \u2193{{.Behind}}{{end}} +{{ .Staging.Added }} ~{{ .Staging.Modified }} -{{ .Staging.Deleted }} \u007c +{{ .Working.Untracked }} ~{{ .Working.Modified }} -{{ .Working.Deleted }}]",
+          "template": "[{{ .HEAD }}{{ if and (eq .Ahead 0) (eq .Behind 0) }} \u2261{{end}}{{ if gt .Ahead 0 }} \u2191{{.Ahead}}{{end}}{{ if gt .Behind 0 }} \u2193{{.Behind}}{{end}} {{ if or .Staging.Changed .Working.Changed }}+{{ .Staging.Added }} ~{{ .Staging.Modified }} -{{ .Staging.Deleted }} \u007c +{{ .Working.Untracked }} ~{{ .Working.Modified }} -{{ .Working.Deleted }}{{end}}]",
           "type": "git"
         }
       ],
