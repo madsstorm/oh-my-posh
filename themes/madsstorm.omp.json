@@ -48,7 +48,13 @@
     {
       "alignment": "left",
       "newline": true,
-      "segments": [],
+      "segments": [
+        {
+          "style": "plain",
+          "template": "\u2500",
+          "type": "text"
+        }
+      ],
       "type": "prompt"
     }
   ],
