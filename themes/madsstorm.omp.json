@@ -5,12 +5,6 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#ffffff",
-          "style": "plain",
-          "template": "{{ reason .Code }}\u274c ",
-          "type": "status"
-        },
-        {
           "foreground": "#ff0000",
           "style": "plain",
           "template": "# ",
