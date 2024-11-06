@@ -44,18 +44,6 @@
         }
       ],
       "type": "prompt"
-    },
-    {
-      "alignment": "left",
-      "newline": true,
-      "segments": [
-        {
-          "style": "plain",
-          "template": "\u2500",
-          "type": "text"
-        }
-      ],
-      "type": "prompt"
     }
   ],
   "final_space": true,
