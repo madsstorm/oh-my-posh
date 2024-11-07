@@ -7,14 +7,20 @@
         {
           "foreground": "#ff0000",
           "style": "plain",
-          "template": "# ",
+          "template": "#",
           "type": "root"
         },
         {
           "foreground": "#00ffff",
           "style": "plain",
-          "template": "{{ .UserName }} ",
+          "template": "{{ .UserName }}",
           "type": "session"
+        },
+        {
+          "foreground": "#ffffff",
+          "template": ":",
+          "style": "plain",
+          "type": "text"
         },
         {
           "foreground": "#ffffff",
@@ -23,7 +29,7 @@
             "style": "full"
           },
           "style": "plain",
-          "template": " {{ .Path }}",
+          "template": "{{ .Path }}",
           "type": "path"
         },
         {
