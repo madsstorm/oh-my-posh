@@ -11,7 +11,7 @@
           "type": "root"
         },
         {
-          "foreground": "#00ffff",
+          "foreground": "#55ff55",
           "style": "plain",
           "template": "{{ .UserName }}",
           "type": "session"
@@ -23,7 +23,7 @@
           "type": "text"
         },
         {
-          "foreground": "#ffffff",
+          "foreground": "#88aaff",
           "properties": {
             "folder_separator_icon": "/",
             "style": "full"
